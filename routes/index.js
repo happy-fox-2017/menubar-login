@@ -7,9 +7,9 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   let currUser = req.session.user
   if (currUser) {
-    res.render('index', { title: `Session punya ${currUser.username}`, session : currUser.role});
+    res.render('index', { title: `Session punya ${currUser.username}`, session : currUser});
   } else {
-    res.render('index',{ title: `Kamu belum login`, session: 'belom login'})
+    res.render('index',{ title: `Kamu belum login`, session: 'not login'})
   }
 });
 
