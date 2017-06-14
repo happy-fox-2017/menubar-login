@@ -1,0 +1,33 @@
+
+<% include ./partials/header %>
+  
+      <br>
+      <h4 align="center">Welcome to login page</h4>
+      <br>
+      <br>
+       <div class="row">
+         <div class="col s4"></div>
+         <form action="/login" method="post" class="col s4">
+           <div class="row">
+             <div class="input-field">
+               <i class="material-icons prefix">account_circle</i>
+               <input type="text" name="username" placeholder="input your username">
+             </div>
+           </div>
+           <div class="row">
+             <div class="input-field">
+               <i class="material-icons prefix">https</i>
+               <input type="password" name="password" placeholder="input role">
+             </div>
+           </div>
+           <input type="submit" class="waves-effect waves-light btn" value="Submit">
+         </form>
+         <div class="col s4"></div>
+       </div>
+      
+    
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
