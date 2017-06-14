@@ -21,10 +21,9 @@
             <% }) %>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Setting</a></li>
+          <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
         <% } else { %>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             <% } %>
         </ul>
       </div>
@@ -32,9 +31,7 @@
     <div class="container">
       <% var user = (session.hasOwnProperty("username")) ? `${session.role} ${session.username}` : "Stranger"  %>
       <h1>halo <%= user %></h1>
-      <p>Welcome</p>
-      <a href="/login">Login</a>
-      <a href="/logout">Logout</a>
+      <h2>Welcome</h2>
     </div>
 
 </body>
