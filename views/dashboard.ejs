@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/head.ejs %>
+  </head>
+  <body>
+    <% include partials/header.ejs %>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm6">
+          <h1>Welcome <%- currentUser.username %></h1>
+          <h3>Here's what you can do here</h3>
+          <p>You can go home, or go log out.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
