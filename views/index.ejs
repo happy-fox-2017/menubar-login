@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  
+  <body>
+    <div class="">
+      <% include ./partials/header.ejs %>
+    </div>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <% if (currentUser == undefined) { %>
+      <p>Please login first</p>
+      <a href="/login">Login</a>
+    <% } else { %>
+      <p>You are logged on as <%-currentUser.role%></p>
+      <a href="/dashboard">Back to dashboard</a>
+    <% } %>
+    <br>
+  </body>
+</html>
