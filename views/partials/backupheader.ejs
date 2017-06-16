@@ -1,0 +1,17 @@
+<nav class="nav navbar-default">
+<div class="container head">
+<ul class="nav navbar-nav navbar-left">
+  <% options.forEach(option => { %>
+    <li><a href="#"><%- option %></a></li>
+    <!-- <li><button type="button" href="/" class="btn btn-info navbar-btn">Home</button></li> -->
+  <% })%>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+  <li><a>You're logged in as <%- currentUser.role %></a></li>
+  <!-- <li><button type="button" href="/dashboard" class="btn btn-success navbar-btn">You're logged in as <%- currentUser.role %></button></li> -->
+  <li><a href="/logout">Logout</a></li>
+  <!-- <li><button type="button" href="/logout" class="btn btn-danger navbar-btn">Logout</button></li> -->
+  <!-- <li><a class="btn btn-danger btn-sm" href="/logout" role="button">Logout</a></li> -->
+</ul>
+</div>
+</nav>
