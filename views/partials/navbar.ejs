@@ -1,0 +1,21 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo"><h2>HOME</h2></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <% if (user) { %>
+        <% if (user.role == "Admin") { %>
+          <li><span class="new badge" data-badge-caption="Admin"></span></li>
+        <% } else if (user.role == "Manager") { %>
+          <li><span class="new badge" data-badge-caption="Manager"></span></li>
+        <% } else if (user.role == "Staff") { %>
+          <li><span class="new badge" data-badge-caption="Staff"></span></li>
+        <% } %>
+
+        <li><a href='/users/logout'>Logout</a></li>
+      <% } else { %>
+        <li><a href="/users/new">Sign Up</a></li>
+        <li><a href="/users/login">Login</a></li>
+      <% } %>
+    </ul>
+  </div>
+</nav>
