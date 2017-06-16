@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  
+  <body>
+    <div class="">
+      <% include partials/header.ejs %>
+    </div>
+    <div class="">
+      <h1>Welcome back <%- currentUser.username %></h1>
+      <p>You're logged in as <%- currentUser.role%></p>
+    </div>
+  </body>
+</html>
